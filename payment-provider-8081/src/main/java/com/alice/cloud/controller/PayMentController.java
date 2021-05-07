@@ -16,17 +16,6 @@ public class PayMentController {
     @Resource
     private IPayMentService payMentService;
 
-    @PostMapping("/insertPayment")
-    public CommonRuselt insertPayMent(Payment payment){
-        try {
-            payMentService.insert(payment);
-        } catch (Exception e) {
-            log.error("插入失败！");
-            return new CommonRuselt(500,"服务器异常");
-        }
-        return new CommonRuselt(200,"插入成功！");
-    }
-
     @GetMapping("/queryPayMent/{id}")
     public CommonRuselt queryPayMent(@PathVariable long id){
         Payment payment = new Payment();

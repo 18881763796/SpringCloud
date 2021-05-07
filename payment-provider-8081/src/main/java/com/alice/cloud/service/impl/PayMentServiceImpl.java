@@ -13,21 +13,6 @@ public class PayMentServiceImpl implements IPayMentService {
     @Resource
     private PayDao payDao;
 
-    @Override
-    public void insert(Payment payment) {
-        payDao.insert(payment);
-    }
-
-    @Override
-    public void delete(long id) {
-        payDao.delete(id);
-    }
-
-    @Override
-    public Payment update(Payment payment) {
-        Payment p = payDao.update(payment);
-        return p;
-    }
 
     @Override
     public Payment query(long id) {
