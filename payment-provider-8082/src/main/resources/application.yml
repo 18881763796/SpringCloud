@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 
 spring:
   application:
@@ -19,7 +19,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka,http://127.0.0.1:7002/eureka
   instance:
-    appname: payMent8081
+    appname: payMent8082
     prefer-ip-address: true
 
 mybatis:

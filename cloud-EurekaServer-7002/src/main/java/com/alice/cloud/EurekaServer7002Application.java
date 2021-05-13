@@ -2,10 +2,12 @@ package com.alice.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
+@EnableEurekaServer
 @SpringBootApplication
-public class PayMentApplication {
+public class EurekaServer7002Application {
     public static void main(String[] args) {
-        SpringApplication.run(PayMentApplication.class);
+        SpringApplication.run(EurekaServer7002Application.class);
     }
 }

@@ -12,6 +12,8 @@
         <module>order-consumer-80</module>
         <module>cloud-api-commons</module>
         <module>cloud-eurekaServer-7001</module>
+        <module>cloud-EurekaServer-7002</module>
+        <module>payment-provider-8082</module>
     </modules>
 
 
